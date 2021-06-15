@@ -10,7 +10,7 @@ function Stopwatch() {
 
     this.stop = function() {
         if(!running)
-            throw new Error('The StopWatch is now running. First start the stopWatch.');
+            throw new Error('The StopWatch is not running. First start the stopWatch.');
         running = false;
         endTime = new Date();
 
